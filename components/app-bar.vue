@@ -1,5 +1,5 @@
 <template>
-    <v-app-bar class="w-100 px-4 d-flex justify-space-between align-center bg-primary">
+    <v-app-bar class="w-100 px-4 d-flex justify-space-between align-center bg-primary position-fixed">
         <h1 class="text-h5 text-white">SageX Assignment</h1>
         <div class="ml-auto">
             <v-dialog v-model="addProductDialog" width="900">
@@ -18,16 +18,5 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue';  // Import ref from vue
-
-// Use ref instead of shallowRef for boolean values
-const addProductDialog = ref(false);  // Dialog visibility state
-
-// Other logic
-const {
-    data,
-    pending,
-    error,
-    refresh
-} = useServerFetch('https://jsonplaceholder.typicode.com/todos')
+const addProductDialog = ref(false);  // Dialog visibility state initially
 </script>

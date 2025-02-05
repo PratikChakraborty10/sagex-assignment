@@ -26,4 +26,7 @@ const { id } = useRoute().params as { id: string };
 // Use server fetch with proper typing
 const { data, pending, error } = useServerFetch<{ data: Product } | null>(`${API_URL}/get-product/${id}`);
 
+definePageMeta({
+    layout: "main-layout"
+})
 </script>

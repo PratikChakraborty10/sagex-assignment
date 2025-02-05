@@ -9,8 +9,8 @@ https://github.com/PratikChakraborty10/sagex-backend.git
 
 ## More
 For this assignment the frontend and backend repositories both are hosted 
-Frontend - https://sagex-assignment.vercel.app/
-Backend - https://sagex-backend.onrender.com
+- Frontend - https://sagex-assignment.vercel.app/
+- Backend - https://sagex-backend.onrender.com
 
 #### * The backend server is hosted on a free instance, which remains active for 15 minutes at a time. After 15 minutes of inactivity, the instance shuts down. When a new API request is made, the server needs to restart, which typically takes around 50-60 seconds. As a result, the first API call may experience a loading delay of up to one minute.
 

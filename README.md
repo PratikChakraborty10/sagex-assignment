@@ -1,75 +1,41 @@
-# Nuxt Minimal Starter
+# Assignment Submission
+### Pratik Chakraborty
 
-Look at the [Nuxt documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+## Frontend Repository
+https://github.com/PratikChakraborty10/sagex-assignment
 
-## Setup
+## Backend Repository
+https://github.com/PratikChakraborty10/sagex-backend
 
-Make sure to install dependencies:
+## More
+For this assignment the frontend and backend repositories both are hosted 
+Frontend - https://sagex-assignment.vercel.app/
+Backend - https://sagex-backend.onrender.com
 
-```bash
-# npm
-npm install
+#### * The backend server is hosted on a free instance, which remains active for 15 minutes at a time. After 15 minutes of inactivity, the instance shuts down. When a new API request is made, the server needs to restart, which typically takes around 50-60 seconds. As a result, the first API call may experience a loading delay of up to one minute.
 
-# pnpm
-pnpm install
+## Run the frontend server locally
+- Clone the frontend repositiry in your local machine
+ ```git clone https://github.com/PratikChakraborty10/sagex-assignment```
+- Open the repository and run ```yarn``` in the root directory to install the dependencies
+- Add .env.local in the root directory
+ ```
+ VITE_PUBLIC_API_BASE_URL='https://sagex-backend.onrender.com/api/products'
+ ```
+ - Now run the frotend server locally
+ ```yarn dev```
+- by default it will start at port 3000
 
-# yarn
-yarn install
-
-# bun
-bun install
+## Run the server locally
+- Clone the backend respository in your local machine
+ ```git clone https://github.com/PratikChakraborty10/sagex-backend```
+- Open the repository and run ```yarn``` in the root directory to install the dependencies
+- Add .env in the root directory
 ```
-
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+AWS_REGION=
+PORT=5000
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
+- Now run the server locally
+ ```yarn dev```
